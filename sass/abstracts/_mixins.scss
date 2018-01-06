@@ -7,3 +7,11 @@
     color: $color-hover;
   }
 }
+
+@mixin hamburger-menu {
+  width: 30px;
+  height: 3px;
+  background-color: $color_light_gray;
+  margin-top: 0;
+  margin-bottom: 0;
+}

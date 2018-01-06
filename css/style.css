@@ -49,6 +49,33 @@ body {
   text-transform: uppercase;
   font-size: 5rem; }
 
+.fat-nav {
+  background-color: rgba(4, 18, 31, 0.8); }
+  .fat-nav ul li a {
+    color: #dde6ed; }
+    .fat-nav ul li a:hover, .fat-nav ul li a:focus, .fat-nav ul li a:active, .fat-nav ul li a.active {
+      color: #d6ac22; }
+
+.hamburger {
+  top: 2.5rem;
+  right: 2.5rem;
+  left: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 21px 8px; }
+  .hamburger__icon {
+    width: 30px;
+    height: 3px;
+    background-color: #dde6ed;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .hamburger__icon:before, .hamburger__icon:after {
+      width: 30px;
+      height: 3px;
+      background-color: #dde6ed;
+      margin-top: 0;
+      margin-bottom: 0; }
+
 .header {
   border: none;
   position: relative;
