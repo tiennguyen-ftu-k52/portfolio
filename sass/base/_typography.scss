@@ -9,5 +9,7 @@ html {
 body {
   font-family: $font_default_regular, 'Helvetica Neue', sans-serif;
   font-size: $size_default_font;
-  line-height: 1.5;
+  line-height: 1.6;
+  background-color: $color_navy_blue;
+  color: $color_light_gray;
 }

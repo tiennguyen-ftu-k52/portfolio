@@ -1,17 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!--Meta-->
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--Styles-->
   <link rel="stylesheet" href="fonts/fonts.min.css">
+  <link rel="stylesheet" href="css/vendors/animate.css">
+  <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!--Title-->
   <title>Tien Nguyen | Full Stack Developer</title>
 </head>
 <body>
-  <header>
-    Welcome to my site
+  <!--Header-->
+  <header id="header" class="header">
+    <div class="header__video-container">
+      <div class="header__video-filter"></div>
+      <video class="header__video" playsinline autoplay muted loop>
+        <source src="videos/typing.mp4" type="video/mp4">
+        <source src="videos/typing.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="header__content-box">
+      <div class="header__content-box__inner text-center">
+        <h1 class="heading-primary mb-4 animated fadeInDown">Hi. I'm Tien,<br>A Full Stack Developer</h1>
+        <div class="header__description mb-4 animated fadeInLeft">
+          <p>I specialize in front-end (HTML, CSS, Javascript, React), back-end (Node.JS, Express.JS) and also database (NoSQL, MongoDB). I love to build producing high quality responsive websites and always pay attention for user experience & client satisfaction.</p>
+        </div>
+        <div class="header__button-group animated fadeInUp">
+          <a href="pdf/tien-nguyen-resume.pdf" target="_blank" class="btn btn--blue btn-lg mr-4">Download My CV</a>
+          <a href="mailto:tiennguyen.ftu.k52@gmail.com" class="btn btn--orange btn-lg">Hire Me</a>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <!--Scripts-->
+  <script src="js/vendors/jquery-3.2.1.min.js"></script>
+  <script src="js/vendors/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

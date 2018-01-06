@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 0;
+  border-width: 2px;
+  padding: 1.2rem 2.6rem;
+  text-transform: uppercase;
+
+  &--orange {
+    @include button($color_orange);
+  }
+
+  &--navy {
+    @include button($color_navy_blue);
+  }
+
+  &--blue {
+    @include button($color_light_blue);
+  }
+}

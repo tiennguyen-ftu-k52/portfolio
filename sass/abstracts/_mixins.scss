@@ -1,0 +1,9 @@
+@mixin button($color-normal: $color_light_blue, $color-hover: $color_white) {
+  border-color: $color-normal;
+  color: $color-normal;
+
+  &:hover, &:focus, &:active {
+    background-color: $color-normal;
+    color: $color-hover;
+  }
+}
