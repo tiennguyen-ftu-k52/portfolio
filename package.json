@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "node_modules/.bin/live-server"
+  },
+  "keywords": [
+    "Portfolio",
+    "html",
+    "css",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Tien Nguyen <tiennguyen.ftu.k52@gmail.com> (https://github.com/tiennguyen-ftu-k52)",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
+  }
+}

@@ -1,0 +1,13 @@
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 576px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font_default_regular, 'Helvetica Neue', sans-serif;
+  font-size: $size_default_font;
+  line-height: 1.5;
+}
