@@ -4,4 +4,20 @@
       max-width: 50rem;
     }
   }
+
+  &__tag-cloud {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: $color_light_blue;
+          font-size: $size_heading_5;
+
+          &:hover, &:focus {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+  }
 }

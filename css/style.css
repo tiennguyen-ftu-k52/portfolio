@@ -208,3 +208,10 @@ body {
 
 .skills__wrapper .progressbar {
   max-width: 50rem; }
+
+.skills__tag-cloud ul li a {
+  text-decoration: none;
+  color: #01bafd;
+  font-size: 1.8rem; }
+  .skills__tag-cloud ul li a:hover, .skills__tag-cloud ul li a:focus {
+    color: #d6ac22; }
