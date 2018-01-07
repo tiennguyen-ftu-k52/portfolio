@@ -1,0 +1,36 @@
+.certificates {
+  &__list {
+
+  }
+
+  &__list-item {
+
+  }
+
+  &__icon-wrapper {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border: 2px solid $color_light_blue;
+  }
+
+  &__content-box {
+    display: inline-block;
+
+    h6 {
+      text-transform: uppercase;
+      font-size: $size_heading_5;
+
+      a {
+        text-decoration: none;
+        color: $color_light_blue;
+
+        &:hover, &:focus, &:active {
+          color: $color_orange;
+        }
+      }
+    }
+  }
+}

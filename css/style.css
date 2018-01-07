@@ -102,7 +102,7 @@ body {
   list-style: none;
   padding: 0; }
   .work-list li {
-    padding: 1.3rem; }
+    padding-left: 1.3rem; }
     .work-list li:before {
       color: #dde6ed;
       content: "\f271";
@@ -215,3 +215,22 @@ body {
   font-size: 3rem; }
   .skills__tag-cloud ul li a:hover, .skills__tag-cloud ul li a:focus {
     color: #d6ac22; }
+
+.certificates__icon-wrapper {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  border: 2px solid #01bafd; }
+
+.certificates__content-box {
+  display: inline-block; }
+  .certificates__content-box h6 {
+    text-transform: uppercase;
+    font-size: 1.8rem; }
+    .certificates__content-box h6 a {
+      text-decoration: none;
+      color: #01bafd; }
+      .certificates__content-box h6 a:hover, .certificates__content-box h6 a:focus, .certificates__content-box h6 a:active {
+        color: #d6ac22; }
