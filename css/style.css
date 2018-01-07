@@ -205,3 +205,6 @@ body {
 
 .expertise__icon {
   vertical-align: middle; }
+
+.skills__wrapper .progressbar {
+  max-width: 50rem; }
