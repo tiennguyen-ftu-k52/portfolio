@@ -1,0 +1,17 @@
+.work-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 1.3rem;
+
+    &:before {
+      color: $color_light_gray;
+      content: "\f271";
+      font-family: Ionicons;
+      display: inline-block;
+      margin-left: -1.3em;
+      width: 1.3em;
+    }
+  }
+}

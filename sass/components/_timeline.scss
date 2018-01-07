@@ -1,0 +1,24 @@
+.timeline {
+
+  .cntl-bar {
+    width: 0.5rem;
+  }
+
+  .cntl-bar-fill {
+    background-color: $color_light_blue;
+  }
+
+  .cntl-icon {
+    border: 2px solid $color_light_blue;
+    background-color: $color_nav;
+  }
+
+  .cntl-content {
+    background-color: inherit;
+    border-bottom: 3px solid $color_light_blue;
+
+    h4 {
+      font-weight: 700;
+    }
+  }
+}

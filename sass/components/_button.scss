@@ -15,4 +15,10 @@
   &--blue {
     @include button($color_light_blue);
   }
+
+  &--small {
+    padding: 1rem;
+    font-size: 1rem;
+    border-width: 1px;
+  }
 }

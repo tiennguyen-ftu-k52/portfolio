@@ -2,6 +2,7 @@
   border: none;
   position: relative;
   height: 100vh;
+  color: $color_light_gray;
 
   &__video-container, &__video-filter, &__content-box {
     position: absolute;
