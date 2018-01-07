@@ -9,6 +9,7 @@
   
   <!--Styles-->
   <link rel="stylesheet" href="fonts/fonts.min.css">
+  <link rel="stylesheet" href="css/vendors/ionicons.min.css">
   <link rel="stylesheet" href="css/vendors/animate.css">
   <link rel="stylesheet" href="css/vendors/jquery.fatNav.min.css">
   <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
@@ -42,21 +43,71 @@
     </div>
     <div class="header__content-box">
       <div class="header__content-box__inner text-center">
-        <h1 class="heading-primary mb-4 animated fadeInDown">Hi. I'm Tien,<br>A Full Stack Developer</h1>
-        <div class="header__description mb-4 animated fadeInLeft">
+        <h1 class="heading-primary mb-4 wow fadeInDown">Hi. I'm Tien,<br>A Full Stack Developer</h1>
+        <div class="header__description mb-4 wow fadeInLeft">
           <p>I specialize in front-end (HTML, CSS, Javascript, React), back-end (Node.JS, Express.JS) and also database (NoSQL, MongoDB). I love to build producing high quality responsive websites and always pay attention for user experience & client satisfaction.</p>
         </div>
-        <div class="header__button-group animated fadeInUp">
+        <div class="header__button-group wow fadeInUp">
           <a href="pdf/tien-nguyen-resume.pdf" target="_blank" class="btn btn--blue btn-lg mr-4">Download My CV</a>
           <a href="mailto:tiennguyen.ftu.k52@gmail.com" class="btn btn--orange btn-lg">Hire Me</a>
         </div>
       </div>
     </div>
   </header>
-
+  
+  <!--Main-->
+  <main>
+    <section id="expertise" class="expertise section-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-secondary mb-2 wow fadeInDown">Skills & Expertise</h2>
+            <p class="heading-fourth mb-5 wow fadeInUp">Full Stack Developer</p>
+            <div class="expertise__img-wrapper wow fadeInLeft">
+              <div class="expertise__img-border"></div>
+              <img class="img-fluid expertise__img-thumbnail" src="images/profile.jpg" alt="profile picture">
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight">
+            <div class="row">
+              <div class="col-6 mb-5">
+                <div class="expertise__icon-wrapper text-center mb-4">
+                  <i class="ion-ios-lightbulb-outline icon icon--medium expertise__icon"></i>
+                </div>
+                <h3 class="heading-fourth">Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+              </div>
+              <div class="col-6 mb-5">
+                <div class="expertise__icon-wrapper text-center mb-4">
+                  <i class="ion-ios-monitor-outline icon icon--medium expertise__icon"></i>
+                </div>
+                <h3 class="heading-fourth">Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+              </div>
+              <div class="col-6 mb-5">
+                <div class="expertise__icon-wrapper text-center mb-4">
+                  <i class="ion-paintbrush icon icon--medium expertise__icon"></i>
+                </div>
+                <h3 class="heading-fourth">Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+              </div>
+              <div class="col-6 mb-5">
+                <div class="expertise__icon-wrapper text-center mb-4">
+                  <i class="ion-code icon icon--medium expertise__icon"></i>
+                </div>
+                <h3 class="heading-fourth">Programming</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!--Scripts-->
   <script src="js/vendors/jquery-3.2.1.min.js"></script>
   <script src="js/vendors/jquery.fatNav.min.js"></script>
+  <script src="js/vendors/wow.min.js"></script>
   <script src="js/vendors/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>

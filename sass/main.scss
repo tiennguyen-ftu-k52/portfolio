@@ -5,10 +5,13 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "components/icon";
 @import "components/button";
 @import "components/heading";
+@import "components/section";
 
 @import "layouts/navigation";
 @import "layouts/footer";
 
 @import "pages/header";
+@import "pages/expertise";

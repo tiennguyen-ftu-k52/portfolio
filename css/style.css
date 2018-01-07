@@ -21,6 +21,12 @@ body {
   background-color: #04121f;
   color: #dde6ed; }
 
+.icon--big {
+  font-size: 4rem; }
+
+.icon--medium {
+  font-size: 3rem; }
+
 .btn {
   border-radius: 0;
   border-width: 2px;
@@ -48,6 +54,23 @@ body {
 .heading-primary {
   text-transform: uppercase;
   font-size: 5rem; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 4rem; }
+
+.heading-third {
+  font-size: 3rem; }
+
+.heading-fourth {
+  font-size: 2.2rem; }
+
+.heading-fifth {
+  font-size: 1.8rem; }
+
+.section-box {
+  padding: 6rem 0;
+  background-color: #04121f; }
 
 .fat-nav {
   background-color: rgba(4, 18, 31, 0.8); }
@@ -80,24 +103,31 @@ body {
   border: none;
   position: relative;
   height: 100vh; }
-  .header__video-filter, .header__content-box, .header__video {
-    position: fixed;
+  .header__video-container, .header__video-filter, .header__content-box {
+    position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .header__video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
-    z-index: 1; }
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
   .header__video-filter {
-    width: 100%;
-    height: 100%;
     z-index: 2;
     background: rgba(4, 18, 31, 0.6);
     background: -webkit-linear-gradient(to right, rgba(22, 40, 54, 0.6), rgba(4, 18, 31, 0.7));
     background: linear-gradient(to right, rgba(22, 40, 54, 0.6), rgba(4, 18, 31, 0.7)); }
   .header__content-box {
-    width: 100%;
-    height: 100%;
     z-index: 3;
     display: table; }
     .header__content-box__inner {
@@ -106,3 +136,32 @@ body {
   .header__description {
     max-width: 70rem;
     margin: 0 auto; }
+
+.expertise__img-wrapper {
+  position: relative;
+  max-width: 30rem;
+  margin: 4rem auto 0; }
+
+.expertise__img-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #01bafd;
+  transform: translate(2rem, -2rem); }
+
+.expertise__icon-wrapper {
+  width: 6rem;
+  line-height: 6rem;
+  background-color: #dde6ed;
+  color: #577285;
+  border-radius: 50%;
+  transition: 0.4s ease; }
+  .expertise__icon-wrapper:hover, .expertise__icon-wrapper:focus {
+    background-color: #01bafd;
+    color: #dde6ed;
+    transform: translateY(-1rem); }
+
+.expertise__icon {
+  vertical-align: middle; }
