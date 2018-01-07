@@ -9,4 +9,4 @@
 ```npm run dev```
 
 ## Screenshot
-![Screenshot](https://raw.githubusercontent.com/tiennguyen-ftu-k52/portfolio/master/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/tiennguyen-ftu-k52/portfolio/master/images/screen-shot.png)
