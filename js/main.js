@@ -44,13 +44,13 @@ $(function() {
         id: 'semantic-ui',
         name: 'SemanticUI',
         value: 80,
-        icon: 'devicon-react-original',
+        icon: 'devicon-firefox-original',
       },
       {
         id: 'material-ui',
         name: 'MaterialUI',
         value: 80,
-        icon: 'devicon-react-original',
+        icon: 'devicon-chrome-original',
       },
       {
         id: 'javascript',
@@ -143,8 +143,9 @@ $(function() {
 
       // Tag Cloud
       $('#tag-cloud ul').append(
-        '<li><a href="#' + skill.id + '">' + skill.name + '</a></li>',
+        '<li><a href="#' + skill.id + '"><i class="' + skill.icon + '"></i></a></li>',
       );
+
       var settings = {
         height: 500,
         width: 500,

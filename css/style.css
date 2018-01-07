@@ -211,7 +211,7 @@ body {
 
 .skills__tag-cloud ul li a {
   text-decoration: none;
-  color: #01bafd;
-  font-size: 1.8rem; }
+  color: #dde6ed;
+  font-size: 3rem; }
   .skills__tag-cloud ul li a:hover, .skills__tag-cloud ul li a:focus {
     color: #d6ac22; }
