@@ -1,7 +1,14 @@
 .heading-primary {
   text-transform: uppercase;
-  font-size: $size_heading_1;
   color: $color_light_gray;
+
+  &--main {
+    font-size: $size_heading_1;
+  }
+
+  &--sub {
+    font-size: 3.5rem;
+  }
 }
 
 .heading-secondary {

@@ -41,6 +41,11 @@
     &__inner {
       display: table-cell;
       vertical-align: middle;
+
+      .heading-primary {
+        max-width: 70rem;
+        margin: 0 auto;
+      }
     }
   }
 
