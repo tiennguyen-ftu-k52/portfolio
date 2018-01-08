@@ -1,0 +1,18 @@
+.projects {
+
+  .swiper-container {
+    width: 100%;
+
+    .swiper-slide {
+      width: 80%;
+      border: 2px solid $color_light_blue;
+      padding: 2rem;
+    }
+  }
+
+  .swiper-container-3d {
+    .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+      //background-color: $color_navy_blue;
+    }
+  }
+}
