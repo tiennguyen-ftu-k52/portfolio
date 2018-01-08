@@ -84,7 +84,7 @@ body {
 
 .timeline .cntl-icon {
   border: 2px solid #01bafd;
-  background-color: #162836; }
+  background-color: #0f283e; }
 
 .timeline .cntl-content {
   background-color: inherit;
@@ -275,8 +275,8 @@ body {
   .header__video-filter {
     z-index: 2;
     background: rgba(4, 18, 59, 0.6);
-    background: -webkit-linear-gradient(to right, rgba(22, 40, 54, 0.6), rgba(4, 18, 59, 0.7));
-    background: linear-gradient(to right, rgba(22, 40, 54, 0.6), rgba(4, 18, 59, 0.7)); }
+    background: -webkit-linear-gradient(to right, rgba(15, 40, 62, 0.6), rgba(4, 18, 59, 0.7));
+    background: linear-gradient(to right, rgba(15, 40, 62, 0.6), rgba(4, 18, 59, 0.7)); }
   .header__content-box {
     z-index: 3;
     display: table; }
@@ -388,3 +388,17 @@ body {
       vertical-align: middle;
       width: 6rem;
       height: auto; }
+
+.contact.section-box {
+  background-color: #0f283e; }
+
+.contact__question::after, .contact__email::after {
+  display: block;
+  height: 0.2rem;
+  background-color: #01bafd;
+  content: ' ';
+  width: 10rem;
+  margin: 1.5rem auto; }
+
+.contact__icon {
+  font-size: 12rem; }

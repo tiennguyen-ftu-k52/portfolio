@@ -1,0 +1,21 @@
+.contact {
+  &.section-box {
+    background-color: $color_nav;
+  }
+
+  &__question, &__email {
+    &::after {
+      display: block;
+      height: 0.2rem;
+      background-color: $color_light_blue;
+      content: ' ';
+      width: 10rem;
+      margin: 1.5rem auto;
+    }
+  }
+
+  &__icon {
+    font-size: 12rem;
+  }
+
+}
