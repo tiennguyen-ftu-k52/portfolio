@@ -198,7 +198,7 @@ $(function() {
     slidesPerView: 'auto',
     coverflowEffect: {
       rotate: 50,
-      stretch: 0,
+      stretch: -30,
       depth: 100,
       modifier: 1,
       slideShadows: true,
@@ -212,5 +212,8 @@ $(function() {
       prevEl: '.swiper-button-prev',
     },
     loop: true,
+    autoplay: {
+      delay: 5000,
+    },
   });
 });

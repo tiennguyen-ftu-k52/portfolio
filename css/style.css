@@ -358,3 +358,33 @@ body {
     width: 80%;
     border: 2px solid #01bafd;
     padding: 2rem; }
+
+.references {
+  color: #dde6ed;
+  background-image: linear-gradient(rgba(20, 30, 48, 0.7), rgba(36, 59, 85, 0.7)), url("../images/work-space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .references__quote {
+    padding: 1rem;
+    font-style: italic;
+    position: relative;
+    text-align: justify; }
+    .references__quote :before {
+      content: '\201C';
+      font-size: 500%;
+      display: block;
+      position: absolute;
+      top: -3rem;
+      left: -2rem; }
+    .references__quote cite {
+      font-size: 90%;
+      font-style: normal;
+      margin-top: 2.5rem;
+      display: block; }
+    .references__quote img {
+      margin-right: 1rem;
+      vertical-align: middle;
+      width: 6rem;
+      height: auto; }
