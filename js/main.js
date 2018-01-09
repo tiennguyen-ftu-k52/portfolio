@@ -9,15 +9,15 @@ $(function() {
       $('.hamburger').css({
         'box-shadow': 'none',
         'background-color': 'transparent',
-        'border': '2px solid #fff',
-        'color': '#fff'
+        border: '2px solid #fff',
+        color: '#fff',
       });
     } else {
       $('.hamburger').css({
         'box-shadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.2)',
         'background-color': '#00d664',
-        'border': '2px solid #00d664',
-        'color': '#fff'
+        border: '2px solid #00d664',
+        color: '#fff',
       });
     }
   });
@@ -165,6 +165,18 @@ $(function() {
       var wrapper = '#skills .skills__wrapper .' + key;
 
       // Tag Cloud
+      var tagCloudSize = 500;
+      var tagCloudRadius = 150;
+      var windowWidth = $(window).width();
+
+      if (windowWidth <= 480) {
+        tagCloudSize = 300;
+        tagCloudRadius = 100;
+      } else if (windowWidth > 480 && windowWidth < 768) {
+        tagCloudSize = 400;
+        tagCloudRadius = 120;
+      }
+
       $('#tag-cloud ul').append(
         '<li><a href="#' +
           skill.id +
@@ -174,9 +186,9 @@ $(function() {
       );
 
       var settings = {
-        height: 500,
-        width: 500,
-        radius: 150,
+        height: tagCloudSize,
+        width: tagCloudSize,
+        radius: tagCloudRadius,
         speed: 0.5,
         slower: 0.9,
         timer: 5,

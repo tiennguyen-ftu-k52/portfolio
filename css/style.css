@@ -379,18 +379,17 @@ body {
   height: 6rem;
   line-height: 6rem;
   text-align: center;
-  border: 2px solid #01bafd;
-  color: #dde6ed; }
+  border: 2px solid #00d664;
+  color: #00d664; }
 
 .certificates__content-box {
   display: inline-block; }
   .certificates__content-box h6 {
-    text-transform: uppercase;
     font-size: 1.8rem; }
     .certificates__content-box h6 a {
       display: inline-block;
       text-decoration: none;
-      color: #01bafd;
+      color: #777;
       transition: 0.4s ease; }
       .certificates__content-box h6 a:hover, .certificates__content-box h6 a:focus, .certificates__content-box h6 a:active {
         color: #00d664;

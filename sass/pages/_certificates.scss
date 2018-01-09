@@ -13,21 +13,20 @@
     height: 6rem;
     line-height: 6rem;
     text-align: center;
-    border: 2px solid $color_light_blue;
-    color: $color_light_gray;
+    border: 2px solid $color_green;
+    color: $color_green;
   }
 
   &__content-box {
     display: inline-block;
 
     h6 {
-      text-transform: uppercase;
       font-size: $size_heading_5;
 
       a {
         display: inline-block;
         text-decoration: none;
-        color: $color_light_blue;
+        color: $color_gray;
         transition: 0.4s ease;
 
         &:hover, &:focus, &:active {
