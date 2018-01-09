@@ -8,6 +8,10 @@
       border: 2px solid $color_green;
       padding: 2rem;
       @include box-shadow;
+
+      img {
+        @include box-shadow;
+      }
     }
   }
 
