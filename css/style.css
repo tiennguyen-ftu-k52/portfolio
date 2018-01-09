@@ -399,8 +399,17 @@ body {
   width: 100%; }
   .projects .swiper-container .swiper-slide {
     width: 80%;
-    border: 2px solid #01bafd;
-    padding: 2rem; }
+    border: 2px solid #00d664;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.projects .swiper-container-3d .swiper-slide-shadow-left, .projects .swiper-container-3d .swiper-slide-shadow-right {
+  background: rgba(126, 213, 111, 0.5);
+  background: -webkit-linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(126, 213, 111, 0.5));
+  background: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(126, 213, 111, 0.5)); }
+
+.projects .swiper-pagination-bullet-active {
+  background-color: #00d664; }
 
 .references {
   color: #dde6ed;

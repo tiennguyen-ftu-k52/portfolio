@@ -5,14 +5,23 @@
 
     .swiper-slide {
       width: 80%;
-      border: 2px solid $color_light_blue;
+      border: 2px solid $color_green;
       padding: 2rem;
+      @include box-shadow;
     }
   }
 
   .swiper-container-3d {
     .swiper-slide-shadow-left, .swiper-slide-shadow-right {
-      //background-color: $color_navy_blue;
+      background: rgba($color-primary-light, 0.5);
+      background: -webkit-linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-light, 0.5));
+      background: linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-light, 0.5));
+    }
+  }
+
+  .swiper-pagination-bullet {
+    &-active {
+      background-color: $color_green;
     }
   }
 }
