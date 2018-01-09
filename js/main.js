@@ -29,6 +29,9 @@ $(function() {
 *               SKILLS
 *  =========================================  */
 $(function() {
+  function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+  }
   const skills = {
     frontend: [
       {id: 'html5', name: 'HTML5', value: 100, icon: 'devicon-html5-plain'},
@@ -131,7 +134,7 @@ $(function() {
   for (var key in skills) {
     $('#skills .skills__wrapper').append(
       '<div class="col-sm-6 col-12"><h3 class="heading-third mb-4">' +
-        key +
+        toTitleCase(key) +
         '</h3><div class="' +
         key +
         '"></div></div>',

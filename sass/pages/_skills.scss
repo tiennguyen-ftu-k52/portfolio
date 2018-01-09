@@ -2,6 +2,13 @@
   &__wrapper {
     .progressbar {
       max-width: 50rem;
+      border-radius: 5px !important;
+      box-shadow: none;
+
+      &.progress {
+        border-radius: 5px !important;
+        background-color: $color_green !important;
+      }
     }
   }
 
@@ -10,11 +17,11 @@
       li {
         a {
           text-decoration: none;
-          color: $color_light_gray;
+          color: $color_green;
           font-size: $size_heading_3;
 
           &:hover, &:focus {
-            color: $color-orange;
+            color: $color_light_blue;
           }
         }
       }

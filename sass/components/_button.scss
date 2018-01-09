@@ -4,8 +4,8 @@
   padding: 1.2rem 2.6rem;
   text-transform: uppercase;
 
-  &--orange {
-    @include button($color_orange);
+  &--green {
+    @include button($color-green);
   }
 
   &--navy {
@@ -14,6 +14,10 @@
 
   &--blue {
     @include button($color_light_blue);
+  }
+
+  &--gray {
+    @include button($color_gray);
   }
 
   &--small {

@@ -2,20 +2,22 @@
 
   .cntl-bar {
     width: 0.5rem;
+    box-shadow: none;
   }
 
   .cntl-bar-fill {
-    background-color: $color_light_blue;
+    background-color: $color_green;
   }
 
   .cntl-icon {
-    border: 2px solid $color_light_blue;
-    background-color: $color_nav;
+    border: 2px solid $color_white;
+    background-color: $color_green;
+    @include box-shadow;
   }
 
   .cntl-content {
     background-color: inherit;
-    border-bottom: 3px solid $color_light_blue;
+    border-bottom: 3px solid $color_green;
 
     h4 {
       font-weight: 500;

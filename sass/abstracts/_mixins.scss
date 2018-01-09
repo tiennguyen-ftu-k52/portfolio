@@ -5,13 +5,18 @@
   background-attachment: fixed;
 }
 
+@mixin box-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 @mixin button($color-normal: $color_light_blue, $color-hover: $color_white) {
-  border-color: $color-normal;
-  color: $color-normal;
+  border-radius: 10rem;
+  background-color: $color-normal;
+  color: $color-hover;
 
   &:hover, &:focus, &:active {
-    background-color: $color-normal;
     color: $color-hover;
+    @include box-shadow;
   }
 }
 

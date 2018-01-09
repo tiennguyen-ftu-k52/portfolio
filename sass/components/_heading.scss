@@ -1,7 +1,4 @@
 .heading-primary {
-  text-transform: uppercase;
-  color: $color_light_gray;
-
   &--main {
     font-size: $size_heading_1;
   }
@@ -12,23 +9,22 @@
 }
 
 .heading-secondary {
-  text-transform: uppercase;
   font-size: $size_heading_2;
-  color: $color_light_gray;
+  background: $color-primary-light;
+  background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background: -webkit-linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .heading-third {
-  text-transform: uppercase;
   font-size: $size_heading_3;
-  color: $color_light_gray;
 }
 
 .heading-fourth {
   font-size: $size_heading_4;
-  color: $color_light_gray;
 }
 
 .heading-fifth {
   font-size: $size_heading_5;
-  color: $color_light_gray;
 }

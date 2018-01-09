@@ -2,7 +2,7 @@
   border: none;
   position: relative;
   height: 100vh;
-  color: $color_light_gray;
+  color: $color_white;
 
   &__video-container, &__video-filter, &__content-box {
     position: absolute;
@@ -29,9 +29,9 @@
 
   &__video-filter {
     z-index: 2;
-    background: rgba($color_navy_blue, 0.6);
-    background: -webkit-linear-gradient(to right, rgba($color_nav, 0.6), rgba($color_navy_blue, 0.7));
-    background: linear-gradient(to right, rgba($color_nav, 0.6), rgba($color_navy_blue, 0.7));
+    background: rgba($color-primary-light, 0.5);
+    background: -webkit-linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5));
+    background: linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5));
   }
 
   &__content-box {
@@ -52,5 +52,9 @@
   &__description {
     max-width: 70rem;
     margin: 0 auto;
+  }
+
+  .heading-primary {
+    color: $color_white;
   }
 }

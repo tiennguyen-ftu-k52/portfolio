@@ -1,12 +1,12 @@
 .fat-nav {
-  background-color: rgba($color_navy_blue, 0.8);
+  background-color: rgba($color-primary, 0.8);
   ul {
     li {
       a {
-        color: $color_light_gray;
+        color: $color_white;
 
         &:hover, &:focus, &:active, &.active {
-          color: $color_orange;
+          color: $color_gray;
         }
       }
     }
