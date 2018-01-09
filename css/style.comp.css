@@ -306,7 +306,7 @@ body {
     transform: translateX(-50%) translateY(-50%); }
   .header__video-filter {
     z-index: 2;
-    background: rgba(126, 213, 111, 0.4);
+    background: rgba(126, 213, 111, 0.7);
     background: -webkit-linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4));
     background: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)); }
   .header__content-box {
@@ -408,6 +408,8 @@ body {
     border: 2px solid #00d664;
     padding: 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+    .projects .swiper-container .swiper-slide img {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .projects .swiper-container-3d .swiper-slide-shadow-left, .projects .swiper-container-3d .swiper-slide-shadow-right {
   background: rgba(126, 213, 111, 0.5);
