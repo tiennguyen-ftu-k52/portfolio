@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "dev": "node_modules/.bin/live-server"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "node_modules/.bin/live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [
     "Portfolio",
@@ -17,7 +23,11 @@
   "author": "Tien Nguyen <tiennguyen.ftu.k52@gmail.com> (https://github.com/tiennguyen-ftu-k52)",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "concat": "^1.0.3",
     "live-server": "^1.2.0",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
   }
 }
