@@ -3,6 +3,24 @@
 *  =========================================  */
 $(function() {
   $.fatNav();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() < 50) {
+      $('.hamburger').css({
+        'box-shadow': 'none',
+        'background-color': 'transparent',
+        'border': '2px solid #fff',
+        'color': '#fff'
+      });
+    } else {
+      $('.hamburger').css({
+        'box-shadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.2)',
+        'background-color': '#00d664',
+        'border': '2px solid #00d664',
+        'color': '#fff'
+      });
+    }
+  });
 });
 
 /*  =========================================
@@ -30,7 +48,9 @@ $(function() {
 *  =========================================  */
 $(function() {
   function toTitleCase(str) {
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    return str.replace(/\w\S*/g, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
   }
   const skills = {
     frontend: [
