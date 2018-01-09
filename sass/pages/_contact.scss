@@ -1,13 +1,14 @@
 .contact {
+
   &.section-box {
-    background-color: $color_nav;
+    background-color: #f7f7f7;
   }
 
   &__question, &__email {
     &::after {
       display: block;
       height: 0.2rem;
-      background-color: $color_light_blue;
+      background-color: $color_green;
       content: ' ';
       width: 10rem;
       margin: 1.5rem auto;
@@ -16,5 +17,6 @@
 
   &__icon {
     font-size: 12rem;
+    color: $color_green;
   }
 }

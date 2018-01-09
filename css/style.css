@@ -238,9 +238,9 @@ body {
     .social-list li a {
       font-size: 1.8rem;
       text-decoration: none;
-      color: #01bafd; }
+      color: #00d664; }
       .social-list li a:hover, .social-list li a:focus, .social-list li a:active {
-        color: #00d664; }
+        color: #01bafd; }
 
 .fat-nav {
   background-color: rgba(0, 214, 100, 0.8); }
@@ -271,7 +271,8 @@ body {
       margin-bottom: 0; }
 
 .footer {
-  border-top: 1px solid #777;
+  background-color: #f7f7f7;
+  border-top: 1px solid #00d664;
   vertical-align: middle; }
   .footer.section-box {
     padding: 2rem 0 1rem; }
@@ -305,9 +306,9 @@ body {
     transform: translateX(-50%) translateY(-50%); }
   .header__video-filter {
     z-index: 2;
-    background: rgba(126, 213, 111, 0.5);
-    background: -webkit-linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5));
-    background: linear-gradient(to right, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)); }
+    background: rgba(126, 213, 111, 0.4);
+    background: -webkit-linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4));
+    background: linear-gradient(to right, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)); }
   .header__content-box {
     z-index: 3;
     display: table; }
@@ -418,6 +419,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .references.section-box {
+    padding: 7rem 0; }
+  .references .heading-secondary {
+    color: #dde6ed; }
   .references__quote {
     padding: 1rem;
     font-style: italic;
@@ -442,15 +447,16 @@ body {
       height: auto; }
 
 .contact.section-box {
-  background-color: #0f283e; }
+  background-color: #f7f7f7; }
 
 .contact__question::after, .contact__email::after {
   display: block;
   height: 0.2rem;
-  background-color: #01bafd;
+  background-color: #00d664;
   content: ' ';
   width: 10rem;
   margin: 1.5rem auto; }
 
 .contact__icon {
-  font-size: 12rem; }
+  font-size: 12rem;
+  color: #00d664; }

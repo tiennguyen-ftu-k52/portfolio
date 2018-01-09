@@ -29,9 +29,9 @@
 
   &__video-filter {
     z-index: 2;
-    background: rgba($color-primary-light, 0.5);
-    background: -webkit-linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5));
-    background: linear-gradient(to right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.5));
+    background: rgba($color-primary-light, 0.4);
+    background: -webkit-linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.4));
+    background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.4));
   }
 
   &__content-box {

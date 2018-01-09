@@ -7,6 +7,14 @@
   url('../images/work-space.jpg');
   @include bg-parallax;
 
+  &.section-box {
+    padding: 7rem 0;
+  }
+
+  .heading-secondary {
+    color: $color_light_gray;
+  }
+
   &__quote {
     padding: 1rem;
     font-style: italic;

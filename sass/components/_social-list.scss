@@ -8,10 +8,10 @@
     a {
       font-size: 1.8rem;
       text-decoration: none;
-      color: $color_light_blue;
+      color: $color_green;
 
       &:hover, &:focus, &:active {
-        color: $color_green;
+        color: $color-light_blue;
       }
     }
   }
