@@ -396,6 +396,11 @@ body {
         color: #00d664;
         transform: scale(1.05); }
 
+.certificates .language__img {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 2rem; }
+
 .projects .swiper-container {
   width: 100%; }
   .projects .swiper-container .swiper-slide {
