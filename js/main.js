@@ -153,7 +153,7 @@ $(function() {
   // Create Progress Bar
   for (var key in skills) {
     $('#skills .skills__wrapper').append(
-      '<div class="col-sm-6 col-12"><h3 class="heading-third mb-4">' +
+      '<div class="col-md-6 col-12"><h3 class="heading-third mb-4">' +
         toTitleCase(key) +
         '</h3><div class="' +
         key +
@@ -207,17 +207,10 @@ $(function() {
 
       // Progress bar
       $(wrapper).append(
-        '<h5 class="heading-fifth">' +
+        '<h5 class="heading-fifth mb-3">' +
           skill.name +
-          '</h5><div id="' +
-          skill.id +
-          '"></div>',
+          '</h5><div class="progress mb-5"><div class="progress-bar" role="progressbar" style="width: ' + skill.value + '%" aria-valuenow="' + skill.value +'" aria-valuemin="0" aria-valuemax="100"></div></div>',
       );
-
-      $('#' + skill.id).LineProgressbar({
-        percentage: skill.value,
-        ShowProgressCount: false,
-      });
     }
   }
 });

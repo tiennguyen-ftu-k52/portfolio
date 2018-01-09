@@ -359,13 +359,13 @@ body {
 .expertise__icon {
   vertical-align: middle; }
 
-.skills__wrapper .progressbar {
-  max-width: 50rem;
-  border-radius: 5px !important;
-  box-shadow: none; }
-  .skills__wrapper .progressbar.progress {
-    border-radius: 5px !important;
-    background-color: #00d664 !important; }
+.skills__wrapper .progress {
+  width: 80%;
+  border-radius: 5px; }
+  .skills__wrapper .progress .progress-bar {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #00d664; }
 
 .skills__tag-cloud ul li a {
   text-decoration: none;

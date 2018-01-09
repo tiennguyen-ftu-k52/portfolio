@@ -1,13 +1,13 @@
 .skills {
   &__wrapper {
-    .progressbar {
-      max-width: 50rem;
-      border-radius: 5px !important;
-      box-shadow: none;
+    .progress {
+      width: 80%;
+      border-radius: 5px;
 
-      &.progress {
-        border-radius: 5px !important;
-        background-color: $color_green !important;
+      .progress-bar {
+        width: 80%;
+        border-radius: 5px;
+        background-color: $color_green;
       }
     }
   }
