@@ -27,7 +27,9 @@ $(function() {
 *               ANIMATION
 *  =========================================  */
 $(function() {
-  new WOW().init();
+  new WOW().init({
+    mobile: false,
+  });
 });
 
 /*  =========================================
@@ -209,7 +211,11 @@ $(function() {
       $(wrapper).append(
         '<h5 class="heading-fifth mb-3">' +
           skill.name +
-          '</h5><div class="progress mb-5"><div class="progress-bar" role="progressbar" style="width: ' + skill.value + '%" aria-valuenow="' + skill.value +'" aria-valuemin="0" aria-valuemax="100"></div></div>',
+          '</h5><div class="progress mb-5"><div class="progress-bar" role="progressbar" style="width: ' +
+          skill.value +
+          '%" aria-valuenow="' +
+          skill.value +
+          '" aria-valuemin="0" aria-valuemax="100"></div></div>',
       );
     }
   }

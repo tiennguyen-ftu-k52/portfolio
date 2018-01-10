@@ -385,16 +385,18 @@ body {
 
 .certificates__content-box {
   display: inline-block; }
-  .certificates__content-box h6 {
-    font-size: 1.8rem; }
-    .certificates__content-box h6 a {
-      display: inline-block;
-      text-decoration: none;
-      color: #777;
-      transition: 0.4s ease; }
-      .certificates__content-box h6 a:hover, .certificates__content-box h6 a:focus, .certificates__content-box h6 a:active {
-        color: #00d664;
-        transform: scale(1.05); }
+  .certificates__content-box h6 a {
+    font-size: 1.8rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+    transition: 0.4s ease; }
+    .certificates__content-box h6 a:hover, .certificates__content-box h6 a:focus, .certificates__content-box h6 a:active {
+      color: #00d664;
+      transform: scale(1.05); }
+    @media (max-width: 991px) {
+      .certificates__content-box h6 a {
+        font-size: 1.6rem; } }
 
 .certificates .language__img {
   width: 7rem;

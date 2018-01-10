@@ -21,9 +21,9 @@
     display: inline-block;
 
     h6 {
-      font-size: $size_heading_5;
 
       a {
+        font-size: $size_heading_5;
         display: inline-block;
         text-decoration: none;
         color: $color_gray;
@@ -32,6 +32,10 @@
         &:hover, &:focus, &:active {
           color: $color_green;
           transform: scale(1.05);
+        }
+
+        @media (max-width: 991px) {
+          font-size: 1.6rem;
         }
       }
     }
