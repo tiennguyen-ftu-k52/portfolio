@@ -3,6 +3,10 @@
   .cntl-bar {
     width: 0.5rem;
     box-shadow: none;
+
+    @media (max-width: 600px) {
+      right: 28px;
+    }
   }
 
   .cntl-bar-fill {
@@ -13,6 +17,12 @@
     border: 2px solid $color_white;
     background-color: $color_green;
     @include box-shadow;
+
+    @media (max-width: 600px) {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
   }
 
   .cntl-content {

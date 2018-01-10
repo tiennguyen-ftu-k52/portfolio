@@ -86,6 +86,9 @@ body {
 .timeline .cntl-bar {
   width: 0.5rem;
   box-shadow: none; }
+  @media (max-width: 600px) {
+    .timeline .cntl-bar {
+      right: 28px; } }
 
 .timeline .cntl-bar-fill {
   background-color: #00d664; }
@@ -94,6 +97,11 @@ body {
   border: 2px solid #fff;
   background-color: #00d664;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .timeline .cntl-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 60px; } }
 
 .timeline .cntl-content {
   background-color: inherit;
