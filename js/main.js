@@ -51,67 +51,72 @@ $(function() {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
   }
+
+  function toSnakeCase(str) {
+    return str.split(' ').join('-');
+  }
+
   const skills = {
     frontend: [
-      {id: 'html5', name: 'HTML5', value: 100, icon: 'devicon-html5-plain'},
-      {id: 'css3', name: 'CSS3', value: 90, icon: 'devicon-css3-plain'},
-      {id: 'sass', name: 'SASS', value: 70, icon: 'devicon-sass-original'},
+      {id: 'html5', name: 'HTML5', value: 90, icon: 'devicon-html5-plain'},
+      {id: 'css3', name: 'CSS3', value: 80, icon: 'devicon-css3-plain'},
+      {id: 'sass', name: 'SASS', value: 60, icon: 'devicon-sass-original'},
       {
         id: 'bootstrap',
         name: 'Bootstrap',
-        value: 90,
+        value: 80,
         icon: 'devicon-bootstrap-plain',
       },
       {
         id: 'semantic-ui',
         name: 'SemanticUI',
-        value: 80,
+        value: 70,
         icon: 'devicon-firefox-original',
       },
       {
         id: 'material-ui',
         name: 'MaterialUI',
-        value: 80,
+        value: 70,
         icon: 'devicon-chrome-original',
       },
       {
         id: 'javascript',
         name: 'Javascript',
-        value: 90,
+        value: 80,
         icon: 'devicon-javascript-plain',
       },
       {
         id: 'react-js',
         name: 'ReactJS',
-        value: 90,
+        value: 80,
         icon: 'devicon-react-original',
       },
       {
         id: 'angular-js',
         name: 'AngularJS',
-        value: 50,
+        value: 40,
         icon: 'devicon-angularjs-plain',
       },
-      {id: 'vue-js', name: 'VueJS', value: 40, icon: 'devicon-vuejs-plain'},
+      {id: 'vue-js', name: 'VueJS', value: 30, icon: 'devicon-vuejs-plain'},
     ],
     backend: [
-      {id: 'node-js', name: 'NodeJS', value: 90, icon: 'devicon-nodejs-plain'},
+      {id: 'node-js', name: 'NodeJS', value: 80, icon: 'devicon-nodejs-plain'},
       {
         id: 'express-js',
         name: 'ExpressJS',
-        value: 90,
+        value: 80,
         icon: 'devicon-express-original',
       },
       {
         id: 'meteor-js',
         name: 'MeteorJS',
-        value: 80,
+        value: 60,
         icon: 'devicon-meteor-plain',
       },
       {
         id: 'mongodb',
         name: 'MongoDB',
-        value: 90,
+        value: 80,
         icon: 'devicon-mongodb-plain',
       },
     ],
@@ -119,24 +124,39 @@ $(function() {
       {
         id: 'react-native',
         name: 'React Native',
-        value: 80,
+        value: 70,
         icon: 'devicon-react-original',
       },
       {
         id: 'objective-c',
         name: 'Objective-C',
-        value: 50,
+        value: 40,
         icon: 'devicon-apple-original',
       },
-      {id: 'swift', name: 'Swift', value: 30, icon: 'devicon-swift-plain'},
+      {id: 'swift', name: 'Swift', value: 20, icon: 'devicon-swift-plain'},
     ],
     desktop: [
       {
         id: 'electron',
         name: 'Electron',
-        value: 80,
+        value: 70,
         icon: 'devicon-atom-original',
       },
+    ],
+    'programming languages': [
+      {
+        id: 'javascript',
+        name: 'Javascript',
+        value: 80,
+        icon: 'devicon-javascript-plain',
+      },
+      {
+        id: 'objective-c',
+        name: 'Objective-C',
+        value: 40,
+        icon: 'devicon-apple-original',
+      },
+      {id: 'python', name: 'Python', value: 30, icon: 'devicon-python-plain'},
     ],
     others: [
       {id: 'git', name: 'Git', value: 80, icon: 'devicon-git-plain'},
@@ -155,13 +175,13 @@ $(function() {
       '<div class="col-md-6 col-12"><h3 class="heading-third mb-4">' +
         toTitleCase(key) +
         '</h3><div class="' +
-        key +
+        toSnakeCase(key) +
         '"></div></div>',
     );
 
     for (var i = 0; i < skills[key].length; i++) {
       var skill = skills[key][i];
-      var wrapper = '#skills .skills__wrapper .' + key;
+      var wrapper = '#skills .skills__wrapper .' + toSnakeCase(key);
 
       // Tag Cloud
       var tagCloudSize = 500;
